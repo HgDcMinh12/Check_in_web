@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UIT Check-in</title>
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.2/css/all.min.css">
+</head>
+<body>
+    <div class="app">
+        <!-- Header -->
+        <div id="header">            
+            <div class="header-heading">
+                <img src="./assets/img/logo-uit.png" alt="logo-uit" class="header_heading_img">
+                <h1 class="header-heading_content">HỆ THỐNG ĐIỂM DANH KHUÔN MẶT UIT</h1>
+            </div>
+            
+            <div class="header-account">
+                <div class="account-register_signin">
+                    <button class="btn btn-homepage-login">ĐĂNG NHẬP</button>
+                </div>
+
+                <div class="modal">
+                    <div class="modal__overlay"></div>
+                    <div class="modal__body">
+                        <!-- Login form -->
+                        <form action="" method="POST" class="form" id="auth-form">
+                            
+                            <!-- Header -->
+                            <div class="auth-form__header">
+                                <h3 class="auth-form__login_heading">Đăng nhập</h3>
+                            </div>
+
+                            <!-- Login -->
+                    
+                            <div class="auth-form__group">
+                                <label for="username" class="auth-form-label">Username</label>
+                                <input id="username" name="username" type="text" class="auth-form__input auth-form_control" placeholder="Nhập username của bạn">
+                                <span class="auth-form_message"></span>
+                            </div>
+
+                            <div class="auth-form__group">
+                                <label for="password" class="auth-form-label">Password</label>
+                                <input id="password" name="password" type="password" class="auth-form__input auth-form_control" placeholder="Nhập mật khẩu của bạn">
+                                <span class="auth-form_message"></span>
+                            </div>
+                            
+                            
+                            <!-- Help -->
+                            <div class="auth-form__aside">
+                                <div class="auth-form__help">
+                                    <a href="#" class="auth-form__help-link auth-form__help-forgot">
+                                        Quên mật khẩu
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Control Button -->
+                            <div class="auth-form__controls">
+                                <button class="btn auth-form__controls-back btn--normal">TRỞ LẠI</button>
+                                <button class="btn btn--primary">ĐĂNG NHẬP</button>
+                            </div>
+                           
+                        </form>
+                    
+                        
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Body -->
+        <div id="body">
+        </div>
+
+        <!-- Footer -->
+    </div>
+    <script src="./main.js"></script>
+    <script src="./pages/login/validator.js"></script>
+    <script type="module" src="./index.js"></script>
+
+</body>
+</html>
