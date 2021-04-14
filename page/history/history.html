@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lịch sử điểm danh</title>
+    <link rel="stylesheet" href="../../assets/css/base.css">
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="../../assets/fonts/fontawesome-free-5.15.2/css/all.min.css">
+</head>
+<body>
+    <div class="app">
+        <!-- Header -->
+        <div id="header">
+            <div class="header_menu">
+                <span class="fas fa-list header-menu_icon" onclick="openNav()"></span>
+                <div id="header-side-nav" class="sidenav">
+                    <div class="side-nav_heading">
+                        <h1 class="side-nav_heading__content">Menu</h1>
+                    </div>
+                    <span href="#" class="fas fa-times closebtn" onclick="closeNav()"></span>
+                    <div class="sidenav_item sidenav-history_item">
+                        <a href="./pages/history/history.html" target="_blank" onclick="closeNav()">
+                            <span class="fas fa-history sidenav_icon"></span>
+                            Lịch sử điểm danh
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="header-heading">
+                <img src="../../assets/img/logo-uit.png" alt="logo-uit" class="header_heading_img">
+                <h1 class="header-heading_content">HỆ THỐNG ĐIỂM DANH KHUÔN MẶT UIT</h1>
+            </div>
+            
+            <div class="header-account header__navbar-user">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png" alt="" class="header__navbar-user-img">
+                    <span class="header__navbar-user-name"></span>
+                    <ul class="header__navbar-user-menu">
+                        <li class="header__navbar-user-item">
+                            <a href="">Tài khoản của tôi </a>
+                        </li>
+                        
+                        <li class="header__navbar-user-item header__navbar-user-item--separate">
+                            <a href="">Đăng xuất</a>
+                        </li>
+                    </ul>
+            </div>
+        </div>
+
+        <!-- Body -->
+        <div id="body">
+            <div id="checkin-history">
+                <table class="history-table">
+                    <thead class="history-table-head">
+                            <tr class="history-table-heading">
+                                <th class="history-table-content">Thời gian</th>
+                                <th class="history-table-content">Ảnh</th>
+                                <th class="history-table-content">Họ và tên</th>
+                                <th class="history-table-content">ID</th>
+                            </tr>
+                    </thead>
+                    <tbody class="history-table-body">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="./history_show.js"></script>
+    <script src="./history_main.js"></script>
+
+</body>
+</html>
